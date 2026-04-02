@@ -1,39 +1,50 @@
-# Kala Drycleaners
+# Kala Drycleaners Website
 
-**Trusted Clean Since 35+ Years**
+A static website for Kala Drycleaners — a trusted family-run dry cleaning business serving customers for over 35 years.
 
-A production-ready static website for Kala Drycleaners — a family-run dry cleaning business in Akola, Maharashtra, India, owned by Gopal Chakar.
-
-## Tech Stack
-
-- Plain HTML5, CSS3, and vanilla JavaScript
-- No frameworks, no build tools
-
-## Project Structure
+## Folder Structure
 
 ```
-index.html          — Single-page site with all sections
-css/style.css       — Responsive styles
-js/main.js          — Sticky navbar, mobile menu, smooth scroll
-assets/             — Icons and images (placeholder)
+Kala-Drycleaners/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      — GitHub Actions workflow for GitHub Pages deployment
+├── css/
+│   └── style.css           — Responsive styles
+├── js/
+│   └── main.js             — Sticky navbar, mobile menu, smooth scroll
+├── index.html              — Single-page site with all sections
+└── README.md               — Project documentation
 ```
 
-## Sections
+## How to Run Locally
 
-1. **Navbar** — Sticky navigation with mobile hamburger menu
-2. **Hero** — Headline, tagline, and CTA buttons (Services / WhatsApp)
-3. **About Us** — Business story and highlight badges
-4. **Services** — Card grid with 6 services
-5. **Contact** — Owner info, phone, WhatsApp, and embedded Google Map
-6. **Footer** — Copyright and tagline
+No build tools or frameworks are required. Simply open `index.html` in your browser:
 
-## Setup
+1. Clone or download this repository.
+2. Open `index.html` in any modern web browser.
 
-Open `index.html` in any browser. No build step required.
+That's it — the site runs entirely with plain HTML, CSS, and JavaScript.
 
-## Customization
+## Deployment
 
-Replace the following placeholders in `index.html`:
+This project auto-deploys to **GitHub Pages** on every push to the `main` branch via GitHub Actions.
 
-- `REPLACE_WITH_PHONE_NUMBER` — business phone number
-- `REPLACE_WITH_WHATSAPP_NUMBER` — WhatsApp number (digits only, with country code)
+The workflow is defined in `.github/workflows/deploy.yml` and performs the following steps:
+
+1. Checks out the repository.
+2. Configures GitHub Pages.
+3. Uploads the entire repository as a Pages artifact.
+4. Deploys the artifact to GitHub Pages.
+
+No manual deployment steps are needed — just push your changes to `main` and the site will be updated automatically.
+
+### Live URL
+
+Once deployed, the site will be available at:
+
+```
+https://[YOUR-GITHUB-USERNAME].github.io/[YOUR-REPO-NAME]/
+```
+
+> **Note:** Replace `[YOUR-GITHUB-USERNAME]` with your actual GitHub username and `[YOUR-REPO-NAME]` with the name of your repository.
